@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #0d1c3a;
+  height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+  }
+
+
+/*Geral*/
+
+  /*Capa*/
+  .titulo{
+    padding: 40px;
+    padding-bottom: 0px;
+    color: #ffffff;
+    margin: 0;
+    font-size: 35px;
+  }
+  .nav-pc{
+    height: 60px;
+  }
+
+/*Projetos e Certificados*/
+  .fundo-secoes{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  background-color: #0a162c;
+  height: 95%;
+  width: 97%;
+  }
+
+  .conteudo-miniaturas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 90%;
+  width: 100%;
+  }
+
+  .conteudo-miniaturas img{
+  width: 450px;
+  height: 300px;
+  border-radius: 10px; 
+  
+  }
+
+  
+  .modal {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .modal img {
+    height: 720px;
+    width: 1250px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+  }
+
+
+
+
+
+
+/*Navegação*/
+header{
+    justify-content: space-between;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content:center;
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    height:10vh;
+    align-items: center;
+    gap: 150px;
+}
+nav img{
+  height: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+  transform: scale(1.1);
+}
+
+/*Botão Baixar Curriculo*/
+.button {
+  --width: 150px;
+  --height: 35px;
+  --button-color: #dfd0b8;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+
+}
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #000000;
+}
+.text,.icon {
+  transition: top 0.5s;
+}
+.icon {
+  color: #000000;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+.button:hover {
+  background: #ffffff;
+}
+.button:hover .text {
+  top: -100%;
+}
+.button:hover .icon {
+  top: 0;
+}
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Capa*/
+.capa_conteudo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.capa_conteudo h1{
+    font-size: 50px;
+    margin: 0px;
+    color: aliceblue;
+}
+.capa_conteudo p{
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    margin: 0;
+    margin-bottom: 10px;}
+
+/*Sobre Mim*/
+
+.sobremim{
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo_sobremim{
+  display: flex;
+  gap: 300px;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  background-color: #0a162c;
+  height: 95%;
+  width: 97%;
+
+}
+.conteudo_sobremim h2{
+  padding-left: 0;
+}
+.conteudo_sobremim img{
+  height: 350px;
+  border-radius: 50%;
+}
+.text_sobremim p{
+  font-size: 30px;
+  width: 400px;
+  text-align: justify;
+  color: #88877e;
+}
+
+/*Minhas Habilidades*/
+.minhashabilidades{
+  display: flex;
+  height: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.conteudo_habilidades{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  background-color: #0a162c;
+  height: 95%;
+  width: 97%;
+}
+.container{
+  display: flex;
+  justify-content: end;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  gap: 20px;
+  align-items: center;
+ 
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 230px;
+  border: 1px solid #dfd0b8;
+  box-sizing: border-box;
+  background-color:#000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.card img{
+  height: 120px;
+  width: 120px;
+}
+.card p{
+  color: white;
+}
+
+/*projetos*/
+.projetos{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.img-projetos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-projetos a img{
+  width: 30px;
+  height: 30px;
+}
+
+/*Certificados*/
+
+.certificados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  align-items: center;
+}
+
+/*Contatos*/
+
+.link_contatos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  height: 60px;
+  background-color: #000;
+}
+.link_contatos a img{
+  height: 30px;
+}
+.link_contatos a .social_midia1{
+  height: 45px;}
+
+.link_contatos a .social_midia2{
+  height: 37px;
+}
+.link_contatos a:hover{
+  transform: scale(1.1);
+}

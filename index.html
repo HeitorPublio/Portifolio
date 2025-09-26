@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="static/css/main_responsivo.css"
+      media="screen"
+    />
+    <title>Heitor Públio</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <!-- Cabeçario -->
+    <header>
+      <section class="nav-pc">
+        <nav>
+          <a href="#"><img src="/static/img/icones/botao_home.png" alt=""></a>
+          <a href="#sobremim">Sobre Mim</a>
+          <a href="#minhashabilidades">Minhas Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Capa -->
+    <section class="Capa">
+      <div class="capa_conteudo">
+        <h1>Heitor Públio</h1>
+        <p>Data analytics</p>
+        <a href="/static/doc/curriculo_heitor.pdf" download>
+          <div class="button">
+            <div class="button-wrapper">
+              <div class="text">Baixar Curriculo</div>
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sobre MIM -->
+    <section class="sobremim" id="sobremim">
+      <div class="conteudo_sobremim">
+        <img src="/static/img/foto_perfil2.png" alt="" />
+        <div class="text_sobremim">
+          <h2 class="titulo">Sobre Mim:</h2>
+          <p>
+            Meu nome é Heitor Públio, tenho 19 anos, estou no segundo período de
+            Engenharia de Software, tenho interesse na área de análise de dados,
+            ciência de dados e desenvolvimento em Python.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minhas Habilidades -->
+    <section class="minhashabilidades" id="minhashabilidades">
+      <div class="conteudo_habilidades">
+      <h2 class="titulo">Minhas Habilidades:</h2>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <img src="/static/img/icones/python_logo.png" alt="" />
+            <p>Python</p>
+          </div>
+          <div class="card">
+            <img src="/static/img/icones/pandas_logo.png" alt="" />
+            <p>Pandas</p>
+          </div>
+          <div class="card">
+            <img src="/static/img/icones/sql_logo.png" alt="" />
+            <p>SQL</p>
+          </div>
+          <div class="card">
+            <img src="/static/img/icones/powerbi_logo.png" alt="" />
+            <p>Power BI</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Projetos -->
+    <section class="projetos" id="projetos">
+      <div class="fundo-secoes">
+      <h2 class="titulo">Projetos:</h2>
+      <div class="conteudo-miniaturas">
+          <div class="img-projetos">
+            <img src="/static/img/projetos/dashboard-1.png" alt="" onclick="mostrarModal(this)" class="imagem" >
+            <a href="https://github.com/HeitorPublio/Dashboard-1"><img src="/static/img/icones_contatos/GitHub.png" alt=""></a>
+          </div>
+
+          <div class="modal" id="modal" onclick="fecharModal()">
+            <img id="imagemModal"/>
+          </div>
+
+          <div class="img-projetos">
+            <img src="/static/img/projetos/dashboard-2.png" alt="" onclick="mostrarModal(this)" class="imagem">
+            <a href="https://github.com/HeitorPublio/Dashboard-2"><img src="/static/img/icones_contatos/GitHub.png" alt="" ></a>
+          </div>
+
+          <div class="modal" id="modal" onclick="fecharModal()">
+            <img id="imagemModal"/>
+          </div>
+      </div>
+      </div>
+
+      
+
+
+    </section>
+
+    <!-- Certificados -->
+     <section class="certificados" id="certificados">
+      <div class="nav-pc"></div>
+      <div class="fundo-secoes">
+      <h2 class="titulo">Certificados:</h2>
+      <div class="conteudo-miniaturas">
+        <img
+          src="/static/doc/certificado-python.jpg"
+          alt=""
+          class="Imagem"
+          onclick="mostrarModal(this)"
+        />
+        <img
+          src="/static/doc/certificado-ciencia-de-dados.jpg"
+          alt=""
+          class="Imagem"
+          onclick="mostrarModal(this)"
+        />
+      </div>
+      <div class="modal" id="modal" onclick="fecharModal()">
+        <img id="imagemModal" />
+      </div>
+      </div>
+    </section>
+
+    <!-- Contatos -->
+    <section class="contatos" id="contatos">
+      <div class="link_contatos">
+        <a href="https://www.instagram.com/publio.heitor/" target="_blank">
+          <img
+            class="social_midia1"
+            src="/static/img/icones_contatos/Instagram.png"
+            alt="Perfil de Publio Heitor no Instagram"
+          />
+        </a>
+        <a href="https://github.com/HeitorPublio" target="_blank">
+          <img
+            class="social_midia2"
+            src="/static/img/icones_contatos/GitHub.png"
+            alt="Perfil de HeitorPublio no GitHub"
+          />
+        </a>
+        <a href="https://discord.com/users/1305963644957360250" target="_blank">
+          <img
+            class="social_midia"
+            src="/static/img/icones_contatos/Discord.png"
+            alt="Perfil de Heitor Publio no Discord"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/heitor-p%C3%BAblio-199426337/"
+          target="_blank"
+        >
+          <img
+            class="social_midia"
+            src="/static/img/icones_contatos/Linkedin.png"
+            alt="Perfil de Heitor Publio no Linkedin"
+          />
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

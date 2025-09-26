@@ -1,0 +1,100 @@
+
+@media screen and (max-width:900px){
+    .nav-pc, header .button{
+        display: none;
+        position: relative;
+    }
+
+
+    /*Capa*/
+   
+    .capa_conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 100vh;
+    }
+    /*Sobre Mim*/
+    .conteudo_sobremim {
+        gap: 20px;
+        text-align: center;
+        width: 93%;
+    }
+
+    .conteudo_sobremim img{
+        height: 200px;
+    }
+    .conteudo_sobremim h2{
+    
+        font-size: 35px;
+        padding-left: 15px;
+    }
+    .conteudo_sobremim p{
+        font-size: 20px;
+        width: 300px;
+    }
+    .conteudo_sobremim{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Habilidades*/
+    .conteudo_habilidades{
+        width: 93%;
+        justify-content: center;
+        align-items: center;
+    }
+    .minhashabilidades h2{
+        font-size: 35px;
+        padding-top: 20px;
+        padding-bottom: 80px;
+
+    }
+    .cards{
+        width: 300px;
+        padding-left: 50px;
+    }
+    .cards img{
+        height: 80px;
+        width: 80px;
+    }
+    .card{
+        height: 200px;
+    }
+    /*Projetos - Certificados */
+    .fundo-secoes{
+        width: 93%;
+    }
+    .conteudo-miniaturas{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .conteudo-miniaturas img{
+        height: 200px;
+        width: 330px;
+        border-radius: 10px;
+    }
+    .modal img{
+        transform: rotate(90deg);
+        width: 500px;
+        height: 350px;
+
+    }
+
+}
+
+    /*Contatos*/
+
+    .link_contatos{
+        gap: 50px;
+    }
+    .link_contatos a img{
+        height: 25px;
+    }
+    .link_contatos a .social_midia1{
+        height: 40px;}
+
+    .link_contatos a .social_midia2{
+        height: 30px;}
