@@ -315,11 +315,7 @@ align-items: center;
   height: 60px;
   background-color: #000;
 }
-.link_contatos a{
-  padding: 100px;
-  padding-bottom: 0;
-  padding-top: 0;
-}
+
 .link_contatos a img{
   height: 30px;
 }
