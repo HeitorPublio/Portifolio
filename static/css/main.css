@@ -248,15 +248,17 @@ align-items: center;
 .cards{
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
+  width: 600px;
   gap: 20px;
   align-items: center;
  
 }
+
+
 .card{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 180px;
   height: 230px;
   border: 1px solid #dfd0b8;
   box-sizing: border-box;

@@ -48,19 +48,20 @@
     .minhashabilidades h2{
         font-size: 35px;
         padding-top: 20px;
-        padding-bottom: 80px;
+        padding-bottom: 50px;
 
     }
     .cards{
+        display: flex;
         width: 300px;
-        padding-left: 50px;
     }
     .cards img{
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
     }
     .card{
-        height: 200px;
+        height: 150px;
+        width: 110px;
     }
     /*Projetos - Certificados */
     .fundo-secoes{
