@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="icon" href="static/img/logo.png" type="image/png" class="logo_site">
+  <title>Heitor Públio</title>
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+      <source src="static/img/1000159035.mp4" type="video/mp4">
+    </video>
+    <header>
+      <section class="nav-topo">
+        <nav>
+          <a href="#"><img src="static/img/icones/botao_home.png" alt=""></a>
+          <a href="#sobremim">Sobre Mim</a>
+          <a href="#minhashabilidades">Minhas Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
+      </section>
+    </header>
+    <section class="capa section-geral">
+      <div class="conteudo-capa">
+        <h1>Heitor Públio</h1>
+        <a href="static/doc/curriculo_heitor.pdf" download>Baixar Curriculo <img src="static/img/icones/download.png" alt=""></a>
+      </div>
+    </section>
+    <section class="sobremim section-geral" id="sobremim">
+      <div class="conteudo-sobremim div-geral">
+        <img src="/static/img/foto_perfil.jpg" alt="">
+        <div class="text-sobremim">
+          <h2 class="titulo">Sobre Mim</h2>
+          <p>Meu nome é Heitor Públio, estou no 3 Período de Engenharia de Software. Tenho interesse nas áreas de Inteligência Artifical e desenvolvimento em Python.</p>
+        </div>
+      </div>
+    </section>
+    <section class="skills section-geral" id="minhashabilidades">
+      <div class="conteudo-skills div-geral">
+        <h2 class="titulo">Minhas Habilidades:</h2>
+        <div class="container">
+          <!-- Área fixa para mostrar o texto -->
+          <div class="descricao" id="descricao">
+            Passe o mouse sobre uma habilidade para ver a descrição aqui.
+          </div>
+
+          <div class="cards">
+            <div class="card" data-text="Meus conhecimentos de Python:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;• Modelos Básicos de IA de Classificação <br>&nbsp;&nbsp;&nbsp;&nbsp;• Tratamento de Dados">
+            <img src="static/img/icones/python_logo.png" alt="" />
+              <p>Python</p>
+            </div>
+
+            <div class="card" data-text="Meus conhecimentos em SQL:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;• Buscar informações <br>&nbsp;&nbsp;&nbsp;&nbsp;• Criar, modificar ou excluir tabelas e bancos <br>&nbsp;&nbsp;&nbsp;&nbsp;• Inserir, atualizar ou excluir registros ">
+              <img src="static/img/icones/sql_logo.png" alt="" />
+              <p>SQL</p>
+            </div>
+            <div class="card" data-text="Meus conhecimentos em Power BI:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;• Criar Relatorios e Dashboards<br>&nbsp;&nbsp;&nbsp;&nbsp;• Importar dados <br>&nbsp;&nbsp;&nbsp;&nbsp;• Remover duplicados<br>&nbsp;&nbsp;&nbsp;&nbsp;• Transformar colunas (separar, mesclar, alterar tipos)<br>&nbsp;&nbsp;&nbsp;&nbsp;• Criar tabelas organizadas para análise">
+              <img src="static/img/icones/powerbi_logo.png" alt="" />
+              <p>Power BI</p>
+            </div>
+            <div class="card" data-text="Meus conhecimentos em Excel:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;• Tabela Dinâmica<br>&nbsp;&nbsp;&nbsp;&nbsp;• Fórmulas e Funções<br>&nbsp;&nbsp;&nbsp;&nbsp;• Formatação<br>&nbsp;&nbsp;&nbsp;&nbsp;• Organização e Análise">
+              <img src="static/img/icones/logo_excel.png" alt="" />
+              <p>Excel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos section-geral" id="projetos">
+  <div class="conteudo-projetos div-geral">
+    <h2 class="titulo">Projetos:</h2>
+    <div class="projetos">
+      <div class="projeto">
+        <a href="https://github.com/HeitorPublio/classificador_mnist">
+        <img src="static/img/projetos/mnist.png" alt="">
+        </a>
+        <div class="miniaturas">
+          <img src="static/img/projetos/python.png" alt="">
+          <img src="static/img/projetos/keras.png" alt="">
+        </div>
+        <div class="texto-hover">Classificador Mnist</div>
+      </div>
+      <div class="projeto" >
+        <a href="https://github.com/HeitorPublio/Dashboard-1">
+          <img src="static/img/projetos/dashboard-1.png" alt="">
+        </a>
+        <div class="miniaturas">
+          <img src="static/img/projetos/power-bi.webp" alt="">
+        </div>
+        <div class="texto-hover">Dashboard</div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="certificados section-geral" id="certificados">
+    <div class="conteudo-certificados div-geral">
+      <h2 class="titulo">Certificados</h2>
+      <div class="certificados-img">
+      <img src="static/doc/certificado-python.jpg" alt="">
+      <img src="static/doc/Certificado_Excel.jpg" alt="">
+      </div>
+    </div>
+  </section>
+<header>
+  <div class="conteudo-nav" id="contatos">
+    <a href="https://github.com/HeitorPublio"><img src="static/img/icones_contatos/placa-do-github.png" alt=""></a>
+    <a href="https://www.instagram.com/publio.heitor/"><img src="static/img/icones_contatos/Instagram.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/heitor-p%C3%BAblio-199426337/"><img src="static/img/icones_contatos/Linkedin.png" alt=""></a>
+    <a href="https://discord.com/users/130596364495736025"><img src="static/img/icones_contatos/discordia.png" alt=""></a>
+  </div>
+</header>
+    <script src="index.js"></script>
+</body>
+</html>
